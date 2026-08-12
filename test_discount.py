@@ -16,3 +16,6 @@ def test_save10_coupon():
 
 def test_holiday_discount():
     assert calculate_discounted_price(100, "guest", is_holiday=True) == 95.00
+
+def test_wrong_expected_value():
+    assert calculate_discounted_price(100, "premium") == 999.99
