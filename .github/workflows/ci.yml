@@ -19,4 +19,4 @@ jobs:
       - name: Lint
         run: flake8 discount.py --max-line-length=100
       - name: Test with coverage
-        run: pytest test_discount.py --cov=discount --cov-fail-under=80 --cov-report=term-missing
+        run: pytest test_discount.py --cov=discount --cov-branch --cov-fail-under=75 --cov-report=term-missing
